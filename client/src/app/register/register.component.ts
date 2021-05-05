@@ -18,7 +18,7 @@ export class RegisterComponent implements OnInit {
     }
 
     registerUser(){
-        this.accountService.registerUser(this.model).subscribe(response => {            
+        this.accountService.register(this.model).subscribe(response => {            
             console.log(response);
             this.cancelRegistration();
         }, error => {
